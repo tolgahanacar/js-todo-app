@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo - App</title>
+    <script src="./main.js" defer='defer'></script>
+</head>
+
+<body>
+    <div>
+        <label for="Add">Add Todo</label><br>
+        <input type="text" name="todo_name" id="todo_name">
+    </div>
+    <div>
+        <input type="submit" value="Add" onclick="addTodo()">
+    </div>
+    <div>
+        <label for="Todos">Todos</label>
+        <ul id="todoList">
+
+        </ul>
+    </div>
+    <div id="editValue">
+        <input type="text" name="edit_todo" id="edit_todo">
+        <input type="number" name="hidd_key" id="hidd_key" hidden>
+        <input type="submit" value="Change" onclick="editTodo()" id="change">
+    </div>
+
+</body>
+
+</html>
