@@ -5,6 +5,7 @@ const addTodo = () => {
   let todoName = document.getElementById("todo_name").value.trim();
   todos.push(todoName);
   getTodos();
+  document.getElementById('todo_name').value = ""
 };
 
 const getTodos = () => {
@@ -43,5 +44,6 @@ const editTodo = () => {
     let todoKey = document.getElementById("hidd_key").value;
     todos[todoKey] = todoNew;
     getTodos();
+    document.getElementById("editValue").style.display = "none";
   }, 100);
 };
