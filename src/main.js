@@ -5,7 +5,7 @@ const addTodo = () => {
   let todoName = document.getElementById("todo_name").value.trim();
   todos.push(todoName);
   getTodos();
-  document.getElementById('todo_name').value = ""
+  document.getElementById("todo_name").value = "";
 };
 
 const getTodos = () => {
