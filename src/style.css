@@ -9,3 +9,79 @@
 html {
   box-sizing: border-box;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-size: 18px;
+}
+
+input[type="text"] {
+  width: calc(100% - 70px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  padding: 8px 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+li input[type="submit"] {
+  margin-left: 10px;
+  background-color: #f44336;
+}
+
+li input[type="submit"]:hover {
+  background-color: #e53935;
+}
+
+#editValue {
+  margin-top: 10px;
+}
+
+#editValue input[type="text"],
+#editValue input[type="number"],
+#editValue input[type="submit"] {
+  margin-right: 10px;
+}
