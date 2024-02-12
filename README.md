@@ -25,11 +25,3 @@ This project is a simple to-do application created using JavaScript. Users can a
 ## Contributing
 
 This project is open source and welcomes contributions. You can submit "Pull Requests" to add new features or fix bugs.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for more information.
-
-## Links
-
-- Live Demo: [Link]([https://example.com](https://codepen.io/tolgahanacar/pen/PoOxwqd)https://codepen.io/tolgahanacar/pen/PoOxwqd)
