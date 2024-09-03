@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDo - App</title>
-    <link rel="stylesheet" href="./src/style.css">
-    <script src="./src/main.js" defer='defer'></script>
-</head>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="./src/main.js" defer></script>
+  </head>
 
-<body>
-    <div>
-        <label for="Add">Add Todo</label><br>
-        <input type="text" name="todo_name" id="todo_name">
+  <body>
+    <div class="container">
+      <div class="input-group">
+        <label for="todo_name">Add Todo</label>
+        <div class="input-controls">
+          <input
+            type="text"
+            name="todo_name"
+            id="todo_name"
+            placeholder="Enter your task"
+          />
+          <button type="button" onclick="addTodo()">Add</button>
+        </div>
+      </div>
+      <div class="todo-list">
+        <label for="todoList">Todos</label>
+        <ul id="todoList"></ul>
+      </div>
+      <div id="editValue" class="edit-group">
+        <input
+          type="text"
+          name="edit_todo"
+          id="edit_todo"
+          placeholder="Edit your task"
+        />
+        <input type="number" name="hidd_key" id="hidd_key" hidden />
+        <button type="button" onclick="editTodo()" id="change">Change</button>
+      </div>
     </div>
-    <div>
-        <input type="submit" value="Add" onclick="addTodo()">
-    </div>
-    <div>
-        <label for="Todos">Todos</label>
-        <ul id="todoList">
-
-        </ul>
-    </div>
-    <div id="editValue">
-        <input type="text" name="edit_todo" id="edit_todo">
-        <input type="number" name="hidd_key" id="hidd_key" hidden>
-        <input type="submit" value="Change" onclick="editTodo()" id="change">
-    </div>
-
-</body>
-
+  </body>
 </html>
